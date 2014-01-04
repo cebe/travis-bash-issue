@@ -14,6 +14,9 @@ install:
   - echo "test *"
   - echo 'test *'
   - echo test *
+  - echo "codeception/codeception *"
+  - echo 'codeception/codeception *'
+  - echo codeception/codeception *
 
 script:
   - echo "done."
