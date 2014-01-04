@@ -23,7 +23,7 @@ install:
   - php echo.php "codeception/codeception *" "codeception/specify *"
   - php echo.php 'codeception/codeception *' 'codeception/specify *'
   - php echo.php codeception/codeception * codeception/specify *
-
+  - php echo.php require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
 
 script:
   - echo "done."
