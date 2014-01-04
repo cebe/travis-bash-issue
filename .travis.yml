@@ -5,28 +5,7 @@ php:
  - 5.4
 
 install:
-  - echo "*"
-  - echo '*'
-  - echo *
-  - echo "\*"
-  - echo '\*'
-  - echo \*
-  - echo "test *"
-  - echo 'test *'
-  - echo test *
-  - echo "codeception/codeception *"
-  - echo 'codeception/codeception *'
-  - echo codeception/codeception *
-  - echo "codeception/codeception *" "codeception/specify *"
-  - echo 'codeception/codeception *' 'codeception/specify *'
-  - echo codeception/codeception * codeception/specify *
-  - php echo.php "codeception/codeception *" "codeception/specify *"
-  - php echo.php 'codeception/codeception *' 'codeception/specify *'
-  - php echo.php codeception/codeception * codeception/specify *
-  - php echo.php require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
   - which composer
-  - cat `which composer`
-  - sed -i "/<\\?php/" "<?php print_r(\\$_SERVER['argv']);" `which composer`
   - cat `which composer`
   - composer require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
 
