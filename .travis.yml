@@ -11,6 +11,9 @@ install:
   - echo "\*"
   - echo '\*'
   - echo \*
+  - echo "test *"
+  - echo 'test *'
+  - echo test *
 
 script:
   - echo "done."
