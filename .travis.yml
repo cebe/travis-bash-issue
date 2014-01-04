@@ -24,6 +24,8 @@ install:
   - php echo.php 'codeception/codeception *' 'codeception/specify *'
   - php echo.php codeception/codeception * codeception/specify *
   - php echo.php require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
+#  - composer require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
+  - sudo composer self-update
   - composer require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
 
 script:
