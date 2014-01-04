@@ -1,0 +1,16 @@
+language: php
+
+php:
+ - 5.5
+ - 5.4
+
+install:
+  - echo "*"
+  - echo '*'
+  - echo *
+  - echo "\*"
+  - echo '\*'
+  - echo \*
+
+script:
+  - echo "done."
