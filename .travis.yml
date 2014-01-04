@@ -17,6 +17,9 @@ install:
   - echo "codeception/codeception *"
   - echo 'codeception/codeception *'
   - echo codeception/codeception *
+  - echo "codeception/codeception *" "codeception/specify *"
+  - echo 'codeception/codeception *' 'codeception/specify *'
+  - echo codeception/codeception * codeception/specify *
 
 script:
   - echo "done."
