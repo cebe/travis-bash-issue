@@ -25,8 +25,9 @@ install:
   - php echo.php codeception/codeception * codeception/specify *
   - php echo.php require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
   - which composer
-#  - composer require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
-  - composer self-update
+  - cat `which composer`
+  - sed -i "/<\\?php/" "<?php print_r(\\$_SERVER['argv']);" `which composer`
+  - cat `which composer`
   - composer require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
 
 script:
