@@ -7,7 +7,7 @@ php:
 install:
   - which composer
   - cat `which composer`
-  - composer require --prefer-dist --dev 'codeception/codeception *' 'codeception/specify *'
+  - composer require --prefer-dist --dev 'cebe/markdown *' 'cebe/js-search *'
 
 script:
   - echo "done."
